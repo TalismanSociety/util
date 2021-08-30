@@ -1,4 +1,3 @@
 # @talismn/util
-**A set of rutil functions for working with polkafot & talisman data.**
 
-[todo]
+**A set of util functions for working with polkadot & talisman data.**
