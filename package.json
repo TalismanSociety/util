@@ -46,6 +46,7 @@
     "url": "https://github.com/TalismanSociety/util/issues"
   },
   "homepage": "https://github.com/TalismanSociety/util#readme",
+  "packageManager": "yarn@3.0.1",
   "lint-staged": {
     "*.{ts,tsx,js,jsx,html,css,scss}": "prettier --write"
   },
