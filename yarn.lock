@@ -216,6 +216,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/runtime@npm:^7.15.3":
+  version: 7.15.4
+  resolution: "@babel/runtime@npm:7.15.4"
+  dependencies:
+    regenerator-runtime: ^0.13.4
+  checksum: c40825430400e47c19b97e4142d5315d2910305b9714d44a711472587ee2fd4521fdba5f02ddd9df3902f5e988d9854fa83f4da1e0c091f70f6983fa52480606
+  languageName: node
+  linkType: hard
+
 "@babel/template@npm:^7.14.5":
   version: 7.14.5
   resolution: "@babel/template@npm:7.14.5"
@@ -281,10 +290,32 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@polkadot/extension-inject@npm:^0.39.3":
+  version: 0.39.3
+  resolution: "@polkadot/extension-inject@npm:0.39.3"
+  dependencies:
+    "@babel/runtime": ^7.15.3
+  peerDependencies:
+    "@polkadot/api": "*"
+  checksum: 9ac87aa2a9a54437da4844f40efa4753b876c02135c1d0ded9bda06029e37a6f2ddf8f0e6c2bc7ed95094ee2e7a2bd05f1648255eff02b384a96c043293935d3
+  languageName: node
+  linkType: hard
+
+"@polkadot/networks@npm:^7.3.1":
+  version: 7.3.1
+  resolution: "@polkadot/networks@npm:7.3.1"
+  dependencies:
+    "@babel/runtime": ^7.15.3
+  checksum: d51d9870ce0b2fbe5a0c8ec4076d5b9efd66bf8a3332df0b52a3d578fb8da66ec115977cb8babeb0d1dbfdddfe6caedc7f71b735a14adb9ffe908759dd965003
+  languageName: node
+  linkType: hard
+
 "@talismn/util@workspace:.":
   version: 0.0.0-use.local
   resolution: "@talismn/util@workspace:."
   dependencies:
+    "@polkadot/extension-inject": ^0.39.3
+    "@polkadot/networks": ^7.3.1
     "@types/react": ^17.0.2
     bignumber.js: ^9.0.1
     esbuild-node-tsc: ^1.6.1
@@ -296,6 +327,7 @@ __metadata:
     react: ^17.0.2
     typescript: ^4.3.5
   peerDependencies:
+    "@polkadot/api": "*"
     react: ">=17"
   languageName: unknown
   linkType: soft
@@ -2316,6 +2348,13 @@ __metadata:
     loose-envify: ^1.1.0
     object-assign: ^4.1.1
   checksum: b254cc17ce3011788330f7bbf383ab653c6848902d7936a87b09d835d091e3f295f7e9dd1597c6daac5dc80f90e778c8230218ba8ad599f74adcc11e33b9d61b
+  languageName: node
+  linkType: hard
+
+"regenerator-runtime@npm:^0.13.4":
+  version: 0.13.9
+  resolution: "regenerator-runtime@npm:0.13.9"
+  checksum: 65ed455fe5afd799e2897baf691ca21c2772e1a969d19bb0c4695757c2d96249eb74ee3553ea34a91062b2a676beedf630b4c1551cc6299afb937be1426ec55e
   languageName: node
   linkType: hard
 
