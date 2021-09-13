@@ -19,7 +19,6 @@
   "author": "Talisman",
   "license": "GPL-3.0-only",
   "peerDependencies": {
-    "@polkadot/api": "*",
     "react": ">=17"
   },
   "dependencies": {
@@ -28,6 +27,7 @@
     "bignumber.js": "^9.0.1"
   },
   "devDependencies": {
+    "@polkadot/api": "^5.9.1",
     "@types/react": "^17.0.2",
     "esbuild-node-tsc": "^1.6.1",
     "husky": "^6.0.0",
