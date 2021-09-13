@@ -5,7 +5,7 @@
 import type { MetadataDefBase } from '@polkadot/extension-inject/types'
 import { selectableNetworks } from '@polkadot/networks'
 
-const hashes: MetadataDefBase[] = selectableNetworks
+export const chains: MetadataDefBase[] = selectableNetworks
   .filter(({ genesisHash }) => !!genesisHash.length)
   .map(network => ({
     chain: network.displayName,
@@ -13,5 +13,3 @@ const hashes: MetadataDefBase[] = selectableNetworks
     icon: network.icon,
     ss58Format: network.prefix,
   }))
-
-export default hashes
