@@ -1,6 +1,6 @@
 {
   "name": "@talismn/util",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A set of util functions for working with polkadot & talisman data.",
   "types": "dist/types",
   "main": "./src/index.ts",
