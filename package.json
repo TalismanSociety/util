@@ -19,9 +19,12 @@
   "author": "Talisman",
   "license": "GPL-3.0-only",
   "peerDependencies": {
+    "@polkadot/api": "*",
     "react": ">=17"
   },
   "dependencies": {
+    "@polkadot/extension-inject": "^0.39.3",
+    "@polkadot/networks": "^7.3.1",
     "bignumber.js": "^9.0.1"
   },
   "devDependencies": {
