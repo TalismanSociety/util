@@ -1,4 +1,5 @@
 export * from './bigNumbers'
 export * from './chains'
+export * from './deferred'
 export * from './planckToTokens'
 export * from './useFuncMemo'
