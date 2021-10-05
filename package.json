@@ -2,19 +2,19 @@
   "name": "@talismn/util",
   "version": "0.0.8",
   "description": "A set of util functions for working with polkadot & talisman data.",
-  "types": "dist/types",
   "main": "./src/index.ts",
-  "browser": "./dist/index.js",
-  "exports": "./dist/index.js",
+  "types": "./lib/index.d.ts",
+  "browser": "./lib/index.js",
+  "exports": "./lib/index.js",
   "type": "module",
   "scripts": {
     "prepare": "husky install",
     "pre-commit": "lint-staged",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "nodemon --watch src --ext js,ts --exec yarn prepack",
-    "build": "esbuild-node-tsc",
-    "build:types": "tsc",
-    "prepack": "yarn build && yarn build:types"
+    "build": "tsc",
+    "build:types": "tsc --emitDeclarationOnly",
+    "prepack": "yarn build"
   },
   "author": "Talisman",
   "license": "GPL-3.0-only",
@@ -29,7 +29,6 @@
   "devDependencies": {
     "@polkadot/api": "^5.9.1",
     "@types/react": "^17.0.2",
-    "esbuild-node-tsc": "^1.6.1",
     "husky": "^6.0.0",
     "import-sort-style-module": "^6.0.0",
     "lint-staged": "^11.1.2",
@@ -39,7 +38,7 @@
     "typescript": "^4.3.5"
   },
   "files": [
-    "dist/**/*"
+    "lib/**/*"
   ],
   "repository": {
     "type": "git",
