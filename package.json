@@ -18,6 +18,9 @@
   "author": "Talisman",
   "license": "GPL-3.0-only",
   "peerDependencies": {
+    "@polkadot/api": "*",
+    "@polkadot/keyring": "*",
+    "@polkadot/util-crypto": "*",
     "react": ">=17"
   },
   "dependencies": {
@@ -27,6 +30,8 @@
   },
   "devDependencies": {
     "@polkadot/api": "^5.9.1",
+    "@polkadot/keyring": "^7.4.1",
+    "@polkadot/util-crypto": "^7.4.1",
     "@types/react": "^17.0.2",
     "esbuild-node-tsc": "^1.6.1",
     "husky": "^6.0.0",
